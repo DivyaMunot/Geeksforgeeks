@@ -37,17 +37,13 @@ for item in range(t):
     
     i = 0
     j = 0
-    n = len(str1)
-    m = len(str2)
     
-    while i < n and j < m :
+    while i < len(str1) and j < len(str2) :
         if str1[i] == str2[j]:
             i += 1
-            j += 1
-        else:
-            j += 1
+        j += 1
         
-    if i == n:
+    if i == len(str1):
         print(1)
     else:
         print(0)
